@@ -1,0 +1,13 @@
+Source: ros-jade-rqt-rviz
+Section: misc
+Priority: extra
+Maintainer: Louise Poubel <louise@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-jade-catkin, ros-jade-pluginlib, ros-jade-rqt-gui, ros-jade-rqt-gui-cpp, ros-jade-rviz
+Homepage: http://wiki.ros.org/rqt_rviz
+Standards-Version: 3.9.2
+
+Package: ros-jade-rqt-rviz
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-jade-pluginlib, ros-jade-rqt-gui, ros-jade-rqt-gui-cpp, ros-jade-rviz
+Description: rqt_rviz provides a GUI plugin embedding RViz.
+ Note that this rqt plugin does NOT supersede RViz but depends on it.
