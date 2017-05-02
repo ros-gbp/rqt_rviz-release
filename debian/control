@@ -1,0 +1,13 @@
+Source: ros-lunar-rqt-rviz
+Section: misc
+Priority: extra
+Maintainer: Louise Poubel <louise@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, qtbase5-dev, ros-lunar-catkin, ros-lunar-pluginlib, ros-lunar-rqt-gui, ros-lunar-rqt-gui-cpp, ros-lunar-rviz
+Homepage: http://wiki.ros.org/rqt_rviz
+Standards-Version: 3.9.2
+
+Package: ros-lunar-rqt-rviz
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-lunar-pluginlib, ros-lunar-rqt-gui, ros-lunar-rqt-gui-cpp, ros-lunar-rviz
+Description: rqt_rviz provides a GUI plugin embedding RViz.
+ Note that this rqt plugin does NOT supersede RViz but depends on it.
