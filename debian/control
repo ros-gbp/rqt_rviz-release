@@ -1,0 +1,13 @@
+Source: ros-melodic-rqt-rviz
+Section: misc
+Priority: extra
+Maintainer: Louise Poubel <louise@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, qtbase5-dev, ros-melodic-catkin, ros-melodic-pluginlib, ros-melodic-rqt-gui, ros-melodic-rqt-gui-cpp, ros-melodic-rviz
+Homepage: http://wiki.ros.org/rqt_rviz
+Standards-Version: 3.9.2
+
+Package: ros-melodic-rqt-rviz
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-melodic-pluginlib, ros-melodic-rqt-gui, ros-melodic-rqt-gui-cpp, ros-melodic-rviz
+Description: rqt_rviz provides a GUI plugin embedding RViz.
+ Note that this rqt plugin does NOT supersede RViz but depends on it.
