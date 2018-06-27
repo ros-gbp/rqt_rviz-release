@@ -15,15 +15,17 @@ catkin_package(
 catkin_python_setup()
 
 set(rqt_rviz_SRCS
+  src/rqt_rviz/config_dialog.cpp
   src/rqt_rviz/rviz.cpp
 )
 
 set(rqt_rviz_HDRS
+  include/rqt_rviz/config_dialog.h
   include/rqt_rviz/rviz.h
 )
 
 if("${qt_gui_cpp_USE_QT_MAJOR_VERSION} " STREQUAL "5 ")
-  find_package(Qt5 REQUIRED COMPONENTS Widgets)
+  find_package(Qt5Widgets REQUIRED)
   qt5_wrap_cpp(rqt_rviz_MOCS ${rqt_rviz_HDRS})
   set(qt_LIBRARIES Qt5::Widgets)
 else()

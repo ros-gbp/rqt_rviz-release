@@ -2,15 +2,10 @@
 Changelog for package rqt_rviz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.5.9 (2018-05-03)
-------------------
-
-0.5.8 (2017-05-02)
-------------------
-* Qt5 widgets bugfix (`#4 <https://github.com/ros-visualization/rqt_rviz/issues/4>`_)
-  * add qtbase to dependency list
-  * find widgets as components rather than package
-* Contributors: Mikael Arguedas
+0.5.10 (2018-06-27)
+-------------------
+* Config file for the plugin and hide_menu saving
+* Contributors: Sammy Pfeiffer, chapulina
 
 0.5.7 (2017-04-27)
 ------------------
