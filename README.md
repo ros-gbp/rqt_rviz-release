@@ -1,3 +1,26 @@
+## rqt_rviz (indigo) - 0.5.10-0
+
+The packages in the `rqt_rviz` repository were released into the `indigo` distro by running `/usr/bin/bloom-release rqt_rviz --track indigo --rosdistro indigo` on `Wed, 27 Jun 2018 17:39:22 -0000`
+
+The `rqt_rviz` package was released.
+
+Version of package(s) in repository `rqt_rviz`:
+
+- upstream repository: https://github.com/ros-visualization/rqt_rviz.git
+- release repository: https://github.com/ros-gbp/rqt_rviz-release.git
+- rosdistro version: `0.5.7-0`
+- old version: `0.5.7-0`
+- new version: `0.5.10-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.3`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## rqt_rviz (melodic) - 0.5.9-1
 
 The packages in the `rqt_rviz` repository were released into the `melodic` distro by running `/usr/bin/bloom-release rqt_rviz --track melodic --rosdistro melodic` on `Fri, 04 May 2018 00:59:56 -0000`
