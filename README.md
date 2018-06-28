@@ -1,3 +1,26 @@
+## rqt_rviz (kinetic) - 0.5.10-0
+
+The packages in the `rqt_rviz` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release rqt_rviz --track kinetic --rosdistro kinetic` on `Thu, 28 Jun 2018 03:07:55 -0000`
+
+The `rqt_rviz` package was released.
+
+Version of package(s) in repository `rqt_rviz`:
+
+- upstream repository: https://github.com/ros-visualization/rqt_rviz.git
+- release repository: https://github.com/ros-gbp/rqt_rviz-release.git
+- rosdistro version: `0.5.7-0`
+- old version: `0.5.7-0`
+- new version: `0.5.10-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.3`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## rqt_rviz (indigo) - 0.5.10-1
 
 The packages in the `rqt_rviz` repository were released into the `indigo` distro by running `/usr/bin/bloom-release rqt_rviz --track indigo --rosdistro indigo` on `Thu, 28 Jun 2018 03:01:43 -0000`
