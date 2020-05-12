@@ -1,3 +1,26 @@
+## rqt_rviz (noetic) - 0.6.1-1
+
+The packages in the `rqt_rviz` repository were released into the `noetic` distro by running `/usr/bin/bloom-release rqt_rviz --rosdistro noetic` on `Tue, 12 May 2020 19:58:51 -0000`
+
+The `rqt_rviz` package was released.
+
+Version of package(s) in repository `rqt_rviz`:
+
+- upstream repository: https://github.com/ros-visualization/rqt_rviz.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.6.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.3`
+- catkin_pkg version: `0.4.17`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.1`
+- vcstools version: `0.1.42`
+
+
 ## rqt_rviz (melodic) - 0.6.0-0
 
 The packages in the `rqt_rviz` repository were released into the `melodic` distro by running `/usr/bin/bloom-release rqt_rviz --track melodic --rosdistro melodic` on `Thu, 28 Jun 2018 03:38:06 -0000`
