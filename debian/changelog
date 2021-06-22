@@ -1,0 +1,237 @@
+ros-melodic-rqt-rviz (0.7.0-1bionic) bionic; urgency=high
+
+  * Fixup catkin_lint issues
+  * Update maintainers
+  * Correctly update window title with context serial no
+  * Notice changes of display config file
+  * Find quit action by name
+  * Suppress rviz splash screen
+  * fix shebang line for python3 (#14 <https://github.com/ros-visualization/rqt_rviz/issues/14>)
+  * Contributors: Mikael Arguedas, Robert Haschke
+
+ -- Robert Haschke <rhaschke@techfak.uni-bielefeld.de>  Mon, 21 Jun 2021 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.6.1-1bionic) bionic; urgency=high
+
+  * Noetic release (#11 <https://github.com/ros-visualization/rqt_rviz/issues/11>)
+    * Bump CMake version to avoid CMP0048 warning
+    * Use setuptools instead of distutils
+  * Use std::vector for variable length arrays. (#10 <https://github.com/ros-visualization/rqt_rviz/issues/10>)
+    * Use std::vector for variable length arrays. (#3 <https://github.com/ros-visualization/rqt_rviz/issues/3>)
+    Some compiler doesn't support variable length arrays feature like G++. Rework the code to use std::vector instead for between cross-compiling.
+    * Fix build break in CI.
+  * Contributors: Alejandro Hernández Cordero, Sean Yen [MSFT]
+
+ -- Robert Haschke <rhaschke@techfak.uni-bielefeld.de>  Mon, 11 May 2020 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.6.0-1bionic) bionic; urgency=high
+
+  * Indigo -> Lunar
+  * Contributors: chapulina
+
+ -- Louise Poubel <louise@osrfoundation.org>  Tue, 26 Jun 2018 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.5.10-1bionic) bionic; urgency=high
+
+  * Config file for the plugin and hide_menu saving
+  * Contributors: Sammy Pfeiffer, chapulina
+
+ -- Louise Poubel <louise@osrfoundation.org>  Tue, 26 Jun 2018 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.5.9-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Wed, 02 May 2018 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.5.8-1bionic) bionic; urgency=high
+
+  * Qt5 widgets bugfix (#4 <https://github.com/ros-visualization/rqt_rviz/issues/4>)
+    * add qtbase to dependency list
+    * find widgets as components rather than package
+  * Contributors: Mikael Arguedas
+
+ -- Louise Poubel <louise@osrfoundation.org>  Mon, 01 May 2017 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.5.7-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Wed, 26 Apr 2017 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.5.6-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Mon, 23 Jan 2017 23:00:00 -0000
+
+ros-melodic-rqt-rviz (0.5.5-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Tue, 01 Nov 2016 23:00:00 -0000
+
+ros-melodic-rqt-rviz (0.5.4-1bionic) bionic; urgency=high
+
+  * mark rviz plugin as experimental since it has severe issues for while
+
+ -- Louise Poubel <louise@osrfoundation.org>  Sun, 18 Sep 2016 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.5.3-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Sun, 15 May 2016 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.5.2-1bionic) bionic; urgency=high
+
+  * fix using Qt 5 when rqt uses it
+
+ -- Louise Poubel <louise@osrfoundation.org>  Thu, 28 Apr 2016 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.5.1-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Wed, 27 Apr 2016 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.5.0-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Tue, 26 Apr 2016 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.4.3-1bionic) bionic; urgency=high
+
+  * disable ogre-log by default, add command line option to enable it (fix #95 <https://github.com/ros-visualization/rqt_robot_plugins/issues/95>)
+
+ -- Louise Poubel <louise@osrfoundation.org>  Mon, 07 Mar 2016 23:00:00 -0000
+
+ros-melodic-rqt-rviz (0.4.2-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Thu, 23 Jul 2015 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.4.1-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Wed, 29 Apr 2015 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.4.0-1bionic) bionic; urgency=high
+
+  * update script to use full plugin name
+
+ -- Louise Poubel <louise@osrfoundation.org>  Tue, 04 Nov 2014 23:00:00 -0000
+
+ros-melodic-rqt-rviz (0.3.7-1bionic) bionic; urgency=high
+
+  * fix argument parsing (#68 <https://github.com/ros-visualization/rqt_robot_plugins/issues/68>) (regression of 0.3.5)
+
+ -- Louise Poubel <louise@osrfoundation.org>  Sun, 17 Aug 2014 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.3.6-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Thu, 10 Jul 2014 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.3.5-1bionic) bionic; urgency=high
+
+  * fix compilation on OS X (#64 <https://github.com/ros-visualization/rqt_robot_plugins/issues/64>)
+
+ -- Louise Poubel <louise@osrfoundation.org>  Sun, 01 Jun 2014 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.3.4-1bionic) bionic; urgency=high
+
+  * add menu hiding and config as command-line args (#62 <https://github.com/ros-visualization/rqt_robot_plugins/pull/62>)
+
+ -- Louise Poubel <louise@osrfoundation.org>  Tue, 06 May 2014 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.3.3-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Mon, 27 Jan 2014 23:00:00 -0000
+
+ros-melodic-rqt-rviz (0.3.2-1bionic) bionic; urgency=high
+
+  * add groups for rqt plugins (ros-visualization/rqt_common_plugins#167 <https://github.com/ros-visualization/rqt_common_plugins/issues/167>)
+
+ -- Louise Poubel <louise@osrfoundation.org>  Tue, 07 Jan 2014 23:00:00 -0000
+
+ros-melodic-rqt-rviz (0.3.1-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Tue, 08 Oct 2013 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.3.0-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Tue, 27 Aug 2013 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.2.16-1bionic) bionic; urgency=high
+
+  * First public release into Hydro
+
+ -- Louise Poubel <louise@osrfoundation.org>  Mon, 08 Jul 2013 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.2.15-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Wed, 24 Apr 2013 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.2.14-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Thu, 11 Apr 2013 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.2.13-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Mon, 08 Apr 2013 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.2.12-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Sat, 06 Apr 2013 16:22:00 -0000
+
+ros-melodic-rqt-rviz (0.2.11-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Sat, 06 Apr 2013 16:00:00 -0000
+
+ros-melodic-rqt-rviz (0.2.10-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Wed, 03 Apr 2013 22:00:00 -0000
+
+ros-melodic-rqt-rviz (0.2.9-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Wed, 06 Mar 2013 23:00:00 -0000
+
+ros-melodic-rqt-rviz (0.2.8-1bionic) bionic; urgency=high
+
+
+
+ -- Louise Poubel <louise@osrfoundation.org>  Thu, 10 Jan 2013 23:00:00 -0000
+
+ros-melodic-rqt-rviz (0.2.7-1bionic) bionic; urgency=high
+
+  * restore rviz plugin and add it to metapackage (that was done in 0.2.6)
+  * first public release for Groovy
+
+ -- Louise Poubel <louise@osrfoundation.org>  Sun, 23 Dec 2012 14:58:00 -0000
+
+
