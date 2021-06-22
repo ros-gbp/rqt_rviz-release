@@ -86,42 +86,27 @@ void RViz::initPlugin(qt_gui_cpp::PluginContext& context)
   menu_bar_->setNativeMenuBar(false);
   menu_bar_->setVisible(!hide_menu_);
   widget_->setMenuBar(menu_bar_);
+  widget_->setSplashPath(QString());
+  connect(widget_, &rviz::VisualizationFrame::displayConfigFileChanged, this, &RViz::onDisplayConfigChanged);
 
   widget_->initialize(display_config_.c_str());
 
   // disable quit action in menu bar
-  QMenu* menu = 0;
-  {
-    // find first menu in menu bar
-    const QObjectList& children = menu_bar_->children();
-    for (QObjectList::const_iterator it = children.begin(); !menu && it != children.end(); it++)
-    {
-      menu = dynamic_cast<QMenu*>(*it);
-    }
-  }
-  if (menu)
-  {
-    // hide last action in menu
-    const QObjectList& children = menu->children();
-    if (!children.empty())
-    {
-      QAction* action = dynamic_cast<QAction*>(children.last());
-      if (action)
-      {
-        action->setVisible(false);
-      }
-    }
-  }
+  QAction* action = menu_bar_->findChild<QAction*>("actQuit");
+  if (action)
+    action->setVisible(false);
 
-  widget_->setWindowTitle("RViz[*]");
-  if (context.serialNumber() != 1)
-  {
-    widget_->setWindowTitle(widget_->windowTitle() + " (" + QString::number(context.serialNumber()) + ")");
-  }
   context.addWidget(widget_);
 
   // trigger deleteLater for plugin when widget or frame is closed
   widget_->installEventFilter(this);
+}
+
+void RViz::onDisplayConfigChanged(const QString& fullpath) {
+  display_config_ = fullpath.toStdString();
+
+  if (context_->serialNumber() != 1 && !widget_->windowTitle().endsWith(")"))
+    widget_->setWindowTitle(widget_->windowTitle() + " (" + QString::number(context_->serialNumber()) + ")");
 }
 
 void RViz::parseArguments()
@@ -136,7 +121,7 @@ void RViz::parseArguments()
   // owns its storage, we need to keep these around until we're done parsing
   // args using boost::program_options
   std::vector<QByteArray> argv_array;
-  const char *argv[argc+1];
+  std::vector<const char *> argv(argc+1);
   argv[0] = ""; // dummy program name
 
   for (int i = 0; i < argc; ++i)
@@ -154,7 +139,7 @@ void RViz::parseArguments()
 
   try
   {
-    po::store(po::parse_command_line(argc+1, argv, options), vm);
+    po::store(po::parse_command_line(argc+1, argv.data(), options), vm);
     po::notify(vm);
 
     if (vm.count("hide-menu"))
