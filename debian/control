@@ -1,0 +1,13 @@
+Source: ros-noetic-rqt-rviz
+Section: misc
+Priority: optional
+Maintainer: Robert Haschke <rhaschke@techfak.uni-bielefeld.de>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, qtbase5-dev, ros-noetic-catkin, ros-noetic-class-loader, ros-noetic-rqt-gui, ros-noetic-rqt-gui-cpp, ros-noetic-rviz
+Homepage: http://wiki.ros.org/rqt_rviz
+Standards-Version: 3.9.2
+
+Package: ros-noetic-rqt-rviz
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-noetic-pluginlib, ros-noetic-rqt-gui, ros-noetic-rqt-gui-cpp, ros-noetic-rviz
+Description: rqt_rviz provides a GUI plugin embedding RViz.
+ Note that this rqt plugin does NOT supersede RViz but depends on it.
